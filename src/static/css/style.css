@@ -25,6 +25,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    margin: .8rem;
     z-index: 2;
 }
 
@@ -53,9 +54,15 @@
     text-decoration: none;
 }
 
-.header-contact-img {
+.header-contact {
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--white);
+}
+
+.header-contact-img {
+    width: 3rem;
+    object-fit: contain;
 }
 
 .footer {
@@ -71,4 +78,11 @@
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+}
+
+.footer-upArrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 8rem;
 }

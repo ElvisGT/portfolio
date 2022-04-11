@@ -21,7 +21,7 @@ const Header = () => {
 
             {/*Mostrar icono de menu*/}
             {icon_menu &&
-                <img className="header-icon-menu" src="https://i.ibb.co/2gfjZBx/3706870-control-list-menu-option-playlist-108704-1.png" alt="icono de menu" onClick={handleClick} />
+                <img className="header-icon-menu" src="https://i.ibb.co/Q8TW0J6/icons8-men-32.png" alt="icono de menu" onClick={handleClick} />
             }
 
             {/*Mostrar el menu*/}
