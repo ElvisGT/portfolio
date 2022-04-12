@@ -14,6 +14,7 @@ const Footer = () => {
                 <div className="footer-upArrow">
                     <a href="#home"><img className="footer-upArrow-img" src="https://i.ibb.co/vV3Tb3B/icons8-arriba-en-cuadrado-64.png" alt="flecha hacia arriba"/></a>
                 </div>
+                <h3 className="footer-derechos">Todos los derechos reservados 2022.</h3>
         </div>
     );
 }
