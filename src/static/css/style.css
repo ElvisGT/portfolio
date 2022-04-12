@@ -1,8 +1,8 @@
 :root {
-    --text:rgb(255, 174, 0);
-    --background-black:rgba(0,0,0,0.8);
-    --background-black-light:rgba(0,0,0,0.3);
-    --background-black-menu:rgba(0,0,0,0.4);
+    --text:#ffbc42;
+    --white:white;
+    --background-black:#252422;
+    --background-black-light:#403d39;
 
 }
 
@@ -27,7 +27,7 @@
     right: 0;
     top: 0;
     margin: .8rem;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-icon-menu {
@@ -45,8 +45,9 @@
     justify-content: space-evenly;
     width: 50%;
     min-height: 35rem;
-    background-color: var(--background-black-menu);
-      
+    background-color: var(--background-black-light);
+    z-index: 2;
+    border-radius: 0 0 0 1rem;
 }
 
 .header-vinculo {
@@ -61,7 +62,6 @@
     align-items: center;
     width: 10rem;
     height: 4rem;
-    background-color: var(--text);
 }
 
 .contact-vinculo {
@@ -71,6 +71,12 @@
 .contact-img {
     width: 3rem;
     object-fit: contain;
+    margin-left: 1rem;
+
+}
+
+.contact-special {
+    
 }
 
 .footer {
