@@ -6,13 +6,13 @@ const Footer = () => {
         <div className="footer">
                 <div className="footer-contacts">
                     <h2 className="footer-title">Contact Me</h2>
-                    <a className="footer-vinculo" href="" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/TkbmxbT/icons8-linkedin-50.png" alt="icono de Linkedin"/>LinkedIn</a>
-                    <a className="footer-vinculo" href="" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/yQFgxyz/icons8-facebook-50-1.png" alt="icono de Facebook"/>Facebook</a>
-                    <a className="footer-vinculo" href="" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/1TMgbsP/icons8-github-64.png" alt="icono de Github"/>Github</a>
-                    <a className="footer-vinculo" href="mailto:elvisgiltorres@gmail.com" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/f0dmVNR/icons8-gmail-50.png" alt="icono de Mail"/>Mail</a>
+                    <a className="footer-vinculo" href="https://www.linkedin.com/in/elvis-gil-torres-ab64a9225/" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/QXPPLpp/icons8-linkedin-64.png" alt="icono de Linkedin"/>LinkedIn</a>
+                    <a className="footer-vinculo" href="https://www.facebook.com/elvis.giltorres/" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/N37fLYQ/icons8-facebook-50.png" alt="icono de Facebook"/>Facebook</a>
+                    <a className="footer-vinculo" href="https://github.com/ElvisGT" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/Fbfdvz5/icons8-github-64.png" alt="icono de Github"/>Github</a>
+                    <a className="footer-vinculo" href="mailto:elvisgiltorres@gmail.com" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/tqWG9BL/icons8-google-plus-64.png" alt="icono de Mail"/>Mail</a>
                 </div>
                 <div className="footer-upArrow">
-                    <img className="footer-upArrow-img" src="" alt="flecha hacia arriba"/>
+                    <a href="#home"><img className="footer-upArrow-img" src="https://i.ibb.co/vV3Tb3B/icons8-arriba-en-cuadrado-64.png" alt="flecha hacia arriba"/></a>
                 </div>
         </div>
     );
