@@ -30,7 +30,7 @@
 }
 
 .header-icon-menu {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
 
 }
 
@@ -57,7 +57,14 @@
 .header-contact {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    width: 10rem;
+    height: 4rem;
     background-color: var(--white);
+}
+
+.contact-vinculo {
+    height: 3rem;
 }
 
 .header-contact-img {
