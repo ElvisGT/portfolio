@@ -1,6 +1,7 @@
 :root {
-    --white:white;
+    --text:rgb(255, 174, 0);
     --background-black:rgba(0,0,0,0.8);
+    --background-black-light:rgba(0,0,0,0.3);
     --background-black-menu:rgba(0,0,0,0.4);
 
 }
@@ -18,7 +19,7 @@
     margin-left: 1rem;
     font-size: 2rem;
     font-weight: 500;
-    color:var(--white);
+    color:var(--text);
 }
 
 .header-icon-close {
@@ -50,7 +51,7 @@
 
 .header-vinculo {
     font-size: 1.8rem;
-    color: var(--white);
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -60,7 +61,7 @@
     align-items: center;
     width: 10rem;
     height: 4rem;
-    background-color: var(--white);
+    background-color: var(--text);
 }
 
 .contact-vinculo {
@@ -87,9 +88,17 @@
     margin-top: 2rem;
 }
 
+.footer-vinculo {
+    width: 12rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--background-black-light);
+}
+
 .footer-upArrow {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 8rem;
+    height: 3rem;
 }
