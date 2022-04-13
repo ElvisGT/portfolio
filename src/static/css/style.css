@@ -6,6 +6,10 @@
 
 }
 
+.Container {
+    min-height: calc(100vh - 10rem - 28rem);
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -83,6 +87,7 @@
 }
 
 .footer-title {
+    margin-top: .4rem;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -112,8 +117,9 @@
 
 .footer-upArrow {
     position: relative;
-    right: 1.2rem;
-    bottom:1.5rem;
+    bottom: 3.8rem;
+    right: .5rem;
+    text-align: end;
    
 }
 
@@ -121,6 +127,13 @@
     width: 4rem;
     height: 4rem;
     object-fit: contain;
+}
+
+.footer-derechos {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--white);
 }
 
 .home {
