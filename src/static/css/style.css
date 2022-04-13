@@ -120,7 +120,23 @@
     bottom: 3.8rem;
     right: .5rem;
     text-align: end;
+    animation-name: upArrow;
+    animation-duration:.6s ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
    
+}
+
+@keyframes upArrow{
+    from {
+        right: -2rem;
+
+    }
+
+    to{
+        right: 1rem;
+
+    }
 }
 
 .footer-upArrow-img {
