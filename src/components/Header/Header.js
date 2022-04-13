@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useState,useEffect } from 'react';
 import '../../static/css/style.css';
 import {Menu} from './Menu';
 
@@ -14,6 +14,23 @@ const Header = () => {
         setIcon_close(!icon_close);
 
     }
+
+
+    useEffect(() => {
+        /*Vericando si se hace Scroll*/
+       window.onscroll = () => {
+           let scroll = document.documentElement.scrollTop || document.body.scrollTop
+
+           if(scroll > 10){
+               setMenu(false);
+           }else if(scroll < 15) {
+                setIcon_menu(true);
+
+           }
+           
+
+       }
+    },[])
 
     return(
         <div className="header" id="home">
