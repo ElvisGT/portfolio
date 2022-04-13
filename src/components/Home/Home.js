@@ -3,7 +3,9 @@ import React from 'react';
 const Home = () => {
     return(
         <div className="home">
-            <img className="home-img" src="" alt="foto de Elvis" />
+            <div className="home-img-container">
+                <img className="home-img" src="" alt="foto de Elvis" />
+            </div>
             <div className="home-container">
                 <h1 className="home-intro">INTRODUCTION</h1>
                 <h2 className="home-front">Frontend Developer React JS</h2>

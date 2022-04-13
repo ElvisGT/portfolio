@@ -52,6 +52,7 @@
     background-color: var(--background-black-light);
     z-index: 2;
     border-radius: 0 0 0 1rem;
+    box-shadow: -1rem 1rem 2rem black;
 }
 
 .header-vinculo {
@@ -98,7 +99,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
 }
 
 .footer-vinculo {
@@ -140,9 +140,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 20rem;
+    min-height: 42rem;
     background-color: var(--background-black-light);
     box-shadow: 0 -.3rem 1rem .1rem black;
+
+}
+
+.home-img-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 20rem;
+    border: .1rem solid var(--white);
+    border-radius: 50%;
 }
 
 .home-container {
@@ -166,5 +176,8 @@
 }
 
 .home-description {
+    width: 95%;
+    font-size: 1.4rem;
     line-height: 2.2rem;
+    color: var(--white);
 }
