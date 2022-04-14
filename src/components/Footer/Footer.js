@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../static/css/style.css';
-import {useArrow} from '../../hooks/useArrow';
+import {useScroll} from '../../hooks/useScroll';
 
 const Footer = () => {
-    const upArrow = useArrow();
+    const scroll = useScroll();
 
     return(
         <div className="footer">
@@ -14,7 +14,7 @@ const Footer = () => {
                     <a className="footer-vinculo" href="https://github.com/ElvisGT" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/Fbfdvz5/icons8-github-64.png" alt="icono de Github"/>Github</a>
                     <a className="footer-vinculo" href="mailto:elvisgiltorres@gmail.com" target={"_blank"} ><img className="contact-img" src="https://i.ibb.co/tqWG9BL/icons8-google-plus-64.png" alt="icono de Mail"/>Mail</a>
                 </div>
-                {upArrow &&
+                {scroll > 100 &&
                     <div className="footer-upArrow">
                         <a href="#home"><img className="footer-upArrow-img" src="https://i.ibb.co/vV3Tb3B/icons8-arriba-en-cuadrado-64.png" alt="flecha hacia arriba"/></a>
                     </div>

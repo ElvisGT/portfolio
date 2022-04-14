@@ -19,9 +19,9 @@ const Header = () => {
     useEffect(() => {
         /*Vericando si se hace Scroll*/
        window.onscroll = () => {
-           let scroll = document.documentElement.scrollTop || document.body.scrollTop
+           const scroll = document.documentElement.scrollTop || document.body.scrollTop
 
-           if(scroll > 10){
+           if(scroll == 50){
                setMenu(false);
            }else if(scroll < 15) {
                 setIcon_menu(true);
