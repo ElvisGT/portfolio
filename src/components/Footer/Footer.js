@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from 'react';
+import React from 'react';
 import { useArrow } from '../../hooks/useArrow';
 import '../../static/css/style.css';
 
