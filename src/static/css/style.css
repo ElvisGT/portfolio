@@ -125,7 +125,7 @@
     right: .5rem;
     text-align: end;
     animation-name: upArrow;
-    animation-duration:.6s ;
+    animation-duration:1s ;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
    
@@ -188,6 +188,7 @@
     margin:1rem 0 .5rem 0;
     font-size: 1.4rem;
     font-weight: 500;
+    letter-spacing: .2rem;
     color:var(--text);
 }
 
@@ -209,7 +210,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 50rem;
+    min-height: 48rem;
     background-color: var(--background-black-light);
 }
 
@@ -217,12 +218,14 @@
     margin: 2rem 0 .5rem;
     font-size: 1.4rem;
     font-weight: 500;
+    letter-spacing: .2rem;
     color:var(--text);
 }
 
 .services-skills {
     margin-bottom: .5rem;
     font-size: 2.5rem;
+    letter-spacing: .2rem;
     color:var(--white);
 }
 
@@ -284,4 +287,17 @@
         transform: translateX(0);
 
     }
+}
+
+.services-card-img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.services-card-serviceName{
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: var(--text);
 }
