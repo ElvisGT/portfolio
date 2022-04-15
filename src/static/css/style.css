@@ -85,6 +85,7 @@
     width: 100%;
     min-height: 28rem;
     background-color: var(--background-black);
+    overflow-x: hidden;
 }
 
 .footer-title {
@@ -99,6 +100,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    
 }
 
 .footer-vinculo {
@@ -134,7 +137,7 @@
     }
 
     to{
-        right: 1rem;
+        right: 2rem;
 
     }
 }
@@ -150,15 +153,17 @@
     font-weight: 300;
     text-align: center;
     color: var(--white);
+    
 }
+
+
 
 .home {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 42rem;
-    background-color: var(--background-black-light);
-    box-shadow: 0 -.3rem 1rem .1rem black;
+    background-color: var(--background-black);
 
 }
 

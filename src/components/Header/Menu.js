@@ -6,6 +6,7 @@ const Menu = ({handleClick}) => {
             <img className="header-icon-close" src="https://i.ibb.co/S6dDFwf/icons8-cancelar-32-2.png" alt="icono de cerrar" onClick={handleClick}/>
                 <div className="header-menu">
                     <a href="#home" className="header-vinculo">Home</a>
+                    <a href="#services" className="header-vinculo">Services</a>
                     <a href="#portfolio" className="header-vinculo">Portfolio</a>
                     <a href="#blog" className="header-vinculo">Blog</a>
                     <a href="#contact" className="header-vinculo">Contact</a>
