@@ -207,9 +207,8 @@
 
 .services {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     min-height: 50rem;
     background-color: var(--background-black-light);
 }
@@ -225,4 +224,59 @@
     margin-bottom: .5rem;
     font-size: 2.5rem;
     color:var(--white);
+}
+
+.services-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    overflow-x: hidden;
+
+}
+
+.services-card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    min-height: 15rem;
+    margin: 1rem;
+    background-color: var(--background-black);
+    border-radius: .8rem;
+
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#card-1 {
+    animation-name: card-1;
+
+}
+#card-2 {
+    animation-name: card-2;
+
+}
+
+
+@keyframes card-1 {
+    from {
+        transform: translateX(-8rem);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes card-2 {
+    from {
+        transform: translateX(8rem);
+    }
+    to{
+        transform: translateX(0);
+
+    }
 }
