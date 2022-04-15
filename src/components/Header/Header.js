@@ -16,22 +16,20 @@ const Header = () => {
     }
 
 
-    useEffect(() => {
-        /*Vericando si se hace Scroll*/
-       window.onscroll = () => {
-           const scroll = document.documentElement.scrollTop || document.body.scrollTop
-
-           if(scroll == 50){
-               setMenu(false);
-           }else if(scroll < 15) {
-                setIcon_menu(true);
-
-           }
+        useEffect(() => {
+            window.onscroll = () => {
+                const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+                if(scroll > 1){
+                    setMenu(false);
+                }else if(scroll < 15) {
+                     setIcon_menu(true);
+     
+                }
+            }
+        })
            
-
-       }
-    },[])
-
+           
+   
     return(
         <div className="header" id="home">
             <h1 className="header-name">ElvisGT</h1>
