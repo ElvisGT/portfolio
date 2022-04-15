@@ -73,6 +73,7 @@
     height: 3rem;
     color: var(--text);
     text-decoration: none;
+    
 }
 
 .contact-img {
@@ -201,4 +202,27 @@
     font-size: 1.4rem;
     line-height: 2.2rem;
     color: var(--white);
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50rem;
+    background-color: var(--background-black-light);
+}
+
+.services-intro {
+    margin: 2rem 0 .5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:var(--text);
+}
+
+.services-skills {
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+    color:var(--white);
 }
