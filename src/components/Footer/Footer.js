@@ -23,8 +23,9 @@ const Footer = () => {
                             </div>
                         }
                     
-                            <h3 className="footer-derechos" >Todos los derechos reservados 2022.</h3>
-                        
+                            <h3 className="footer-derechos" >All rights reserved 2022.</h3>
+                            
+                            <p className="footer-icon">Icons by <a className="footer-icon-vinculo" target="_blank" href="https://icons8.com">Icons8</a></p>
                     
 
             

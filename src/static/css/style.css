@@ -157,7 +157,17 @@
     
 }
 
+.footer-icon {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--white);
+}
 
+.footer-icon-vinculo {
+    text-decoration: none;
+    color: var(--text);
+}
 
 .home {
     display: flex;
