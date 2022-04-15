@@ -3,22 +3,25 @@ import { useState,useEffect } from 'react';
 const useArrow = () => {
     const [upArrow,setUpArrow] = useState(false);
 
-    useEffect(() => {
-        window.onscroll = () => {
-            const scroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-            if(scroll > 100){
-                setUpArrow(true);
-            }
-            else{
-                setUpArrow(false);
-            }
+useEffect(() => {
+
+    //Funcion para escuchar el evento del scroll
+    window.addEventListener("scroll", function(){
+        const upArrow = document.getElementById("contact");
+        const screenSize = window.innerHeight;
+
+        if(upArrow.getBoundingClientRect().top < screenSize){
+            setUpArrow(true);
         }
-    },[])
 
 
-    return upArrow;
+    })
+
+},[])
+
+    return upArrow
+
 }
-
 
 export {useArrow};
