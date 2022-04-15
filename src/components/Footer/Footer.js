@@ -1,25 +1,10 @@
 import React,{ useState,useEffect } from 'react';
+import { useArrow } from '../../hooks/useArrow';
 import '../../static/css/style.css';
 
 
 const Footer = () => {
-    const [upArrow,setUpArrow] = useState(false);
-
-
-    useEffect(() => {
-
-        window.addEventListener("scroll", function(){
-            const upArrow = document.getElementById("contact");
-            const screenSize = window.innerHeight;
-
-            if(upArrow.getBoundingClientRect().top < screenSize){
-                setUpArrow(true);
-            }
-
-
-        })
-
-    },[])
+    const arrow = useArrow();
        
     return(
         <div className="footer">
@@ -32,7 +17,7 @@ const Footer = () => {
                 </div>  
 
                         {/* Se muestra solo cuando la condicion del viewport se cumple y el estado es verdadero*/}
-                        {upArrow && 
+                        {arrow && 
                             <div className="footer-upArrow" >
                                 <a href="#home"><img className="footer-upArrow-img" src="https://i.ibb.co/vV3Tb3B/icons8-arriba-en-cuadrado-64.png" alt="flecha hacia arriba"/></a>
                             </div>
