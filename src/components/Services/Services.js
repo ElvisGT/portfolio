@@ -6,8 +6,8 @@ const Services = () => {
     
     return(
         <div className="services" id="services">
-                <h1 className="services-intro">SERVICES</h1>
-                <h2 className="services-skills">My Skills</h2>
+                <h1 className="page-title">SERVICES</h1>
+                <h2 className="page-description">My Skills</h2>
 
                 <div className="services-card">
                     <ItemServices serviceName="HTML5" serviceIMG="https://i.postimg.cc/qqP7qFY8/icons8-html-5-50.png" serviceALT="Foto del logo de HTML5" cardID="card-1"/>
