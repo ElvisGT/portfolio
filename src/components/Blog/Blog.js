@@ -10,6 +10,7 @@ const Blog = () => {
                 <div className="blog-container" >
                     <BlogItem />
                     <BlogItem />
+                    <BlogItem />
                 </div>
         </div>
 
