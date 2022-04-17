@@ -1,9 +1,10 @@
 import React from 'react';
-import {Header} from './components/Header/Header';
-import {Footer} from './components/Footer/Footer';
-import {Home} from './components/Home/Home';
-import {Services} from './components/Services/Services';
-import {Blog} from './components/Blog/Blog';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+import { Home } from './components/Home/Home';
+import { Services } from './components/Services/Services';
+import { Blog } from './components/Blog/Blog';
+import { Portfolio } from './components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <div className="Container">
         <Home />
+        <Portfolio />
         <Services />
         <Blog />
       </div>
