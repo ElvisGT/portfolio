@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import {BlogItem} from './BlogItem';
 import {useBlog} from '../../hooks/useBlog';
+import { PageTitle } from '../PageTitle/PageTitle';
 
 
 
@@ -43,8 +44,7 @@ const Blog = () => {
     
     return(
         <div className="blog" id="blog">
-                <h1 className="page-title">LATEST NEWS</h1>
-                <h2 className="page-description">Latest news about technology,entertainment and science</h2>
+                <PageTitle title="LAST NEWS" description="Latest news about technology,entertainment and science"/>
                 <input type="button" value="Language" onClick={handleClick}/>
 
                 {news.length === 0 ? <h1 className="loading">Loading...</h1> :
