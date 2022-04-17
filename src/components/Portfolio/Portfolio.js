@@ -1,12 +1,28 @@
 import React from 'react';
 import {PageTitle} from '../PageTitle/PageTitle';
+import {Projects} from './Projects';
+import {data} from './data.jsx';
+
 
 const Portfolio = () => {
+    
+
     return(
         <div className="portfolio" id="portfolio">
             <PageTitle title="PORTFOLIO" description="My projects"/>
 
-            
+            <section className="portfolio-container">
+            {data.map(item => (
+                    <React.Fragment key={item.id}>
+                        <Projects img={item.img} 
+                                  alt={item.img}
+                                  description={item.description}
+                                  github={item.github}
+                        />
+                    </React.Fragment>
+                ))
+            }
+            </section>
 
         </div>
     );
