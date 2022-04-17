@@ -6,11 +6,16 @@ import {useBlog} from '../../hooks/useBlog';
 
 
 const Blog = () => {
-    const [spanish,setSpanish] = useState(false);
+    const saved = JSON.parse(localStorage.getItem("language")); //Obteniendo el local storage
+    
+    const [spanish,setSpanish] = useState(saved);
     
     var API;
 
-    if(spanish){
+    localStorage.setItem("language",JSON.stringify(spanish)); //Guardando el estado en el local storage
+
+
+    if(saved){
          API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us&category=technology,entertainment,science&language=es"; 
          //URL de la API en espaniol
 
@@ -18,16 +23,22 @@ const Blog = () => {
     else{
          API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us&category=technology,entertainment,science&language=en"; 
          //URL de la API en ingles
-    }
-
+        }
+        
+        
     const news = useBlog(API);
 
 
+    
+    
+    
     const handleClick = () => {
         setSpanish(!spanish);
-        
-    }
 
+        window.location.reload();
+    }
+    
+    
     return(
         <div className="blog" id="blog">
                 <h1 className="page-title">LATEST NEWS</h1>
@@ -39,11 +50,7 @@ const Blog = () => {
                         <div className="blog-container" >
                         {news.slice(0,3).map(item => (
                             <React.Fragment key={item.title}>
-                                <BlogItem dateTime={item.pubDate} img={item.image_url} alt={item.title} title={item.title} description={item.description} category={item.category}/>
-{/*                                 
-                                <BlogItem dateTime={item.pubDate} img={item.image_url} alt={item.title} title={item.title} description={item.description} category={item.category}/>
-                                
-                                <BlogItem dateTime={item.pubDate} img={item.image_url} alt={item.title} title={item.title} description={item.description} category={item.category}/> */}
+                                <BlogItem dateTime={item.pubDate} img={item.image_url} alt={item.title} title={item.title} description={item.description} />
                                 
                             </React.Fragment>
                         ))

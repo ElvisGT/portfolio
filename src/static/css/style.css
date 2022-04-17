@@ -316,15 +316,35 @@
 .blog-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin-bottom: 2rem;
 }
 
 .item-card {
     width: 25rem;
-    height: 35rem;
+    min-height: 30rem;
     margin-top: 2rem;
     background-color: var(--background-black-light);
     border-radius: .8rem;
+}
+
+.date-time {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    background-color: var(--text);
+}
+
+.item-card-img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.item-card-description {
+    white-space:wrap;
+    text-overflow: ellipsis;
 }
 
 .loading {
