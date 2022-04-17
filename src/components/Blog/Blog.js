@@ -8,17 +8,20 @@ import { PageTitle } from '../PageTitle/PageTitle';
 
 const Blog = () => {
     var url_img; // declaracion de variable para setear la url de la imagen del post
-
-    const saved = JSON.parse(localStorage.getItem("language")); //Obteniendo el local storage
-    
-    const [spanish,setSpanish] = useState(saved);
-    
     var API;
 
-    localStorage.setItem("language",JSON.stringify(spanish)); //Guardando el estado en el local storage
+    const savedSpanish = JSON.parse(localStorage.getItem("spanish")); //Obteniendo el local storage
+    const savedLanguage = JSON.parse(localStorage.getItem("language"));
+    
+    const [spanish,setSpanish] = useState(savedSpanish);
+    const [language,setLanguage] = useState(savedLanguage);
+    
+
+    localStorage.setItem("spanish",JSON.stringify(spanish)); //Guardando el estado en el local storage
+    localStorage.setItem("language",JSON.stringify(language)); 
 
 
-    if(saved){
+    if(savedSpanish){
          API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us&category=technology,entertainment,science&language=es"; 
          //URL de la API en espaniol
 
@@ -37,15 +40,25 @@ const Blog = () => {
     
     const handleClick = () => {
         setSpanish(!spanish);
-        window.location.reload();
-        localStorage.clear();
+        //Esto es para setear un idioma segun la eleccion del user
+            if(language === "Español"){
+                setLanguage("English");
+            }else{      
+                setLanguage("Español");
+                
+            }
+            
+        window.location.reload(); //esto es para recargar la pagina
+        localStorage.clear(); // esto es para limpiar el local storage
     }
     
     
     return(
         <div className="blog" id="blog">
                 <PageTitle title="LAST NEWS" description="Latest news about technology,entertainment and science"/>
-                <input type="button" value="Language" onClick={handleClick}/>
+                <button className="blog-button-language" type="button" onClick={handleClick}>
+                    Noticas en {language ? language : "..."}
+                </button>
 
                 {news.length === 0 ? 
                     <React.Fragment>
