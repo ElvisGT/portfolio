@@ -326,3 +326,47 @@
     background-color: var(--background-black-light);
     border-radius: .8rem;
 }
+
+.loading {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: var(--white);
+
+    animation-name: loading;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;   
+
+
+}
+
+@keyframes loading 
+{   
+    0% {
+        color: var(--white);
+    }
+
+    30%{
+        color: var(--text);
+        letter-spacing: .2rem;
+    }
+
+    60% {
+        letter-spacing: .3rem;
+        color:orange;
+    }
+
+    90% {
+        color: yellow;
+        letter-spacing: .4rem;
+
+    }
+
+    100% {
+        color: var(--white);
+        letter-spacing: 0;
+
+    }
+    
+}
