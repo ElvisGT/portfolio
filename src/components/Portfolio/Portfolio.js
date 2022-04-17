@@ -6,6 +6,8 @@ const Portfolio = () => {
         <div className="portfolio" id="portfolio">
             <PageTitle title="PORTFOLIO" description="My projects"/>
 
+            
+
         </div>
     );
 }

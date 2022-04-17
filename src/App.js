@@ -12,8 +12,8 @@ function App() {
       <Header />
       <div className="Container">
         <Home />
-        <Portfolio />
         <Services />
+        <Portfolio />
         <Blog />
       </div>
       <Footer />
