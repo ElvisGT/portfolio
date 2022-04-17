@@ -15,6 +15,9 @@ const useCard = () => {
         if(services.getBoundingClientRect().top < 300){
             setCard(true);
         }
+        else {
+            setCard(false);
+        }
 
     })
     },[])

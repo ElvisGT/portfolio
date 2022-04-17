@@ -14,6 +14,9 @@ useEffect(() => {
         if(upArrow.getBoundingClientRect().top < screenSize){
             setUpArrow(true);
         }
+        else{
+            setUpArrow(false);
+        }
 
 
     })

@@ -47,7 +47,15 @@ const Blog = () => {
                 <PageTitle title="LAST NEWS" description="Latest news about technology,entertainment and science"/>
                 <input type="button" value="Language" onClick={handleClick}/>
 
-                {news.length === 0 ? <h1 className="loading">Loading...</h1> :
+                {news.length === 0 ? 
+                    <React.Fragment>
+                        <h1 className="loading">Loading...</h1> 
+                        <div className="loading-box">
+                            <div className="loading-box-item"></div>
+                        </div>
+                    </React.Fragment>
+
+                    :
 
                         <div className="blog-container" >
                         {news.slice(0,3).map(item => (
