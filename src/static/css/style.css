@@ -296,8 +296,8 @@
 }
 
 .services-card-img {
-    width: 5rem;
-    height: 5rem;
+    min-width: 5rem;
+    min-height: 5rem;
 }
 
 .services-card-serviceName{
@@ -336,7 +336,7 @@
 
 .item-card {
     width: 30rem;
-    min-height: 30rem;
+    min-height: 18rem;
     margin-top: 2rem;
     background-color: var(--background-black-light);
     border-radius: .8rem;
