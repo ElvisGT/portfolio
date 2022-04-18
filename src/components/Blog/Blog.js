@@ -73,7 +73,7 @@ const Blog = () => {
                         <div className="blog-container" >
                         {news.slice(0,3).map(item => (
                                 
-                        item.image_url !== null  ? url_img = item.image_url : url_img = "https://i.ibb.co/0skmxQ8/icons8-no-image-gallery-100.png", //si la imgen de la api es null le seteo la url mia
+                        item.image_url !== null  ? url_img = item.image_url : url_img = "https://i.ibb.co/DwBKfJf/icons8-no-c-maras-50.png", //si la imgen de la api es null le seteo la url mia
 
                                 
                             <React.Fragment key={item.title}>
