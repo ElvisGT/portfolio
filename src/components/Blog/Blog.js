@@ -22,12 +22,12 @@ const Blog = () => {
 
 
     if(savedSpanish){
-         API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us&category=technology,entertainment,science&language=es"; 
+         API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us,ca,cn&category=technology,entertainment,science&language=es"; 
          //URL de la API en espaniol
 
     }
     else{
-         API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us&category=technology,entertainment,science&language=en"; 
+         API = "https://newsdata.io/api/1/news?apikey=pub_6547d847408d34ede1e81dcb8d10856ec8b9&country=es,us,ca,cn&category=technology,entertainment,science&language=en"; 
          //URL de la API en ingles
         }
         
@@ -77,7 +77,7 @@ const Blog = () => {
 
                                 
                             <React.Fragment key={item.title}>
-                                <BlogItem dateTime={item.pubDate} img={url_img} alt={item.title} title={item.title} description={item.description} />
+                                <BlogItem dateTime={item.pubDate} img={url_img} alt={item.title} title={item.title} description={item.description} link={item.link}/>
                                 
                             </React.Fragment>
                         ))
