@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https//elvisgiltorres.github.io/portfolio/static/css/main.a205419b.css",
+    "main.js": "/https//elvisgiltorres.github.io/portfolio/static/js/main.6169d28c.js",
+    "index.html": "/https//elvisgiltorres.github.io/portfolio/index.html",
+    "main.a205419b.css.map": "/https//elvisgiltorres.github.io/portfolio/static/css/main.a205419b.css.map",
+    "main.6169d28c.js.map": "/https//elvisgiltorres.github.io/portfolio/static/js/main.6169d28c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a205419b.css",
+    "static/js/main.6169d28c.js"
+  ]
+}
