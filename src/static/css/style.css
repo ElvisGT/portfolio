@@ -109,6 +109,7 @@
     color: var(--text);
     background-color: var(--background-black-light);
     border-radius: .8rem;
+    z-index: 2;
 }
 
 .footer-upArrow {
