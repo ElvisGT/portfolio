@@ -389,7 +389,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
+    min-width: 10rem;
+    max-width: 15rem;
     margin: 0 auto 1rem;
     font-weight: bold;
     font-style: italic;
