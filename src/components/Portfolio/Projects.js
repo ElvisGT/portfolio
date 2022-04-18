@@ -1,17 +1,26 @@
 import React from 'react';
+import {usePortfolio} from '../../hooks/usePortfolio';
 
 const Projects = ({img,alt,description,github,hosting}) => {
-    return(
-        <article className="portfolio-project-item">
-            <img className="project-item-img" src={img} alt={alt}/>
-            <p className="project-item-description">{description}</p>
-            <div className="project-item-vinculo-container"> 
-                <a className="project-item-vinculo" target={"_blank"} href={github}>Github</a>
-                <a className="project-item-vinculo" target={"_blank"} href={hosting}>Test</a>
-            </div>
+    const portfolioItem = usePortfolio();
 
-        </article>
+    return(
+        <React.Fragment>
+        {portfolioItem && 
+                <article className="portfolio-project-item">
+                    <img className="project-item-img" src={img} alt={alt}/>
+                    <p className="project-item-description">{description}</p>
+                    <div className="project-item-vinculo-container"> 
+                        <a className="project-item-vinculo" target={"_blank"} href={github}>Github</a>
+                        <a className="project-item-vinculo" target={"_blank"} href={hosting}>Test</a>
+                    </div>
+        
+                </article>
+
+        }
+        </React.Fragment>
     );
+
 }
 
 export {Projects};
