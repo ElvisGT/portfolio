@@ -5,10 +5,7 @@ const useBlog = (API) => {
     const [news,setNews] = useState([]);
 
     useEffect(() => {
-        fetch(API,{
-            mode:'no-cors',
-
-        })
+        fetch(API)
         .then(response => response.json())
         .then(data => setNews(data.results));
     },[]);
