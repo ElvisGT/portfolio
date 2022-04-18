@@ -593,3 +593,14 @@
 .project-item-vinculo:active {
     background-color: yellow;
 }
+
+
+@media screen and (min-width:768px){
+    .home {
+        flex-direction: row;
+        padding-left: 1rem;
+    }
+    .home-description{
+        font-size: 1.6rem;
+    }
+}
