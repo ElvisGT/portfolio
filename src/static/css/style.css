@@ -20,10 +20,29 @@
 }
 
 .header-name {
-    margin-left: 1rem;
+    margin-left:1rem;
     font-size: 2rem;
     font-weight: 500;
     color:var(--text);
+}
+
+#header-name-animation {
+    position: static;
+    left: 8rem;
+    top: 8rem;
+    animation: none;
+}
+
+@keyframes name {
+    0% {
+        transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0);
+    }
 }
 
 .header-icon-close {
@@ -53,6 +72,12 @@
     z-index: 2;
     border-radius: 0 0 0 1rem;
     box-shadow: -1rem 1rem 2rem black;
+}
+
+.header-menu-desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .header-vinculo {
@@ -599,8 +624,42 @@
     .home {
         flex-direction: row;
         padding-left: 1rem;
+        min-height: 30rem;
     }
     .home-description{
         font-size: 1.6rem;
     }
+
+    .header {
+        display: inline-block;
+    }
+
+    .header-icon-menu {
+        display: none;
+    }
+
+    .header-vinculo{
+        flex: .1;
+        transition: .8s;
+    }
+
+    .header-vinculo:hover {
+        color:yellow;
+        flex: .2;
+        transition:flex .8s;
+        text-align: center;
+        border: .1rem solid var(--text);
+    }
+
+    .contact-vinculo {
+        max-width: 3rem;
+        margin-right: 2rem;
+    }
+
+    #header-name-animation{
+        position: absolute;
+        animation: name 5s linear  infinite  both;
+
+    }
+   
 }
