@@ -512,6 +512,7 @@
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
+    min-height:30rem;
     background-color: var(--background-black);
 }
 
@@ -526,6 +527,21 @@
     width: 40rem;
     min-height: 30rem;
     margin: 1rem;
+
+    animation-name: portfolio_item;
+    animation-timing-function: linear;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes portfolio_item {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+
+    }
 }
 
 .project-item-img {
