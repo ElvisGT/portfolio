@@ -45,7 +45,7 @@ const data = [
         alt:'imagen de proyecto Animaciones_Css',
         description:'Proyecto donde puse en practica lo aprendido sobre animaciones con Css. Es un juego simple debemos dar clic en un conejo cuando salga para acumular puntos.',
         github:'https://github.com/ElvisGT/Animaciones_con_CSS',
-        hosting:'',
+        hosting:'https://quiet-wisp-d4121f.netlify.app/',
         
     },
 ];
