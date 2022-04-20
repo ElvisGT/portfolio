@@ -19,6 +19,11 @@ const Services = () => {
                     
                     <ItemServices serviceName="Git" serviceIMG="https://i.postimg.cc/cJ0rfVJh/icons8-git-50.png" serviceALT="Foto del logo de Git" cardID="card-2"/>
 
+                    <ItemServices serviceName="Javascript" serviceIMG="https://i.ibb.co/d2ycmhM/icons8-javascript-50.png" serviceALT="Foto del logo de Javascript" cardID="card-1"/>
+
+                    <ItemServices serviceName="Github" serviceIMG="https://i.ibb.co/9VskQXz/icons8-github-50.png" serviceALT="Foto del logo de Github" cardID="card-1"/>
+
+
                 </div>
         </div>
 
