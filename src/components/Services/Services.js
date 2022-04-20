@@ -15,9 +15,9 @@ const Services = () => {
                     
                     <ItemServices serviceName="CSS3" serviceIMG="https://i.postimg.cc/GhtPyTft/icons8-css3-50.png" serviceALT="Foto del logo de CSS3" cardID="card-1"/>
 
-                    <ItemServices serviceName="React JS" serviceIMG="https://i.postimg.cc/cLYnRRBx/icons8-reaccionar-50.png" serviceALT="Foto del logo de React" cardID="card-2"/>
+                    <ItemServices serviceName="React JS" serviceIMG="https://i.postimg.cc/cLYnRRBx/icons8-reaccionar-50.png" serviceALT="Foto del logo de React" cardID="card-1"/>
                     
-                    <ItemServices serviceName="Git" serviceIMG="https://i.postimg.cc/cJ0rfVJh/icons8-git-50.png" serviceALT="Foto del logo de Git" cardID="card-2"/>
+                    <ItemServices serviceName="Git" serviceIMG="https://i.postimg.cc/cJ0rfVJh/icons8-git-50.png" serviceALT="Foto del logo de Git" cardID="card-1"/>
 
                     <ItemServices serviceName="Javascript" serviceIMG="https://i.ibb.co/d2ycmhM/icons8-javascript-50.png" serviceALT="Foto del logo de Javascript" cardID="card-1"/>
 
