@@ -18,6 +18,7 @@ const Portfolio = () => {
                                   alt={item.img}
                                   description={item.description}
                                   github={item.github}
+                                  hosting={item.hosting}
                         />
                     </React.Fragment>
                 ))
