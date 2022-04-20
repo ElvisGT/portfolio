@@ -5,9 +5,10 @@ import {MenuDesktop} from './MenuDesktop';
 
 const Header = () => {
     const [menu,setMenu] = useState(false);
-    const [menuDesktop,setMenuDesktop] = useState(false);
+    const [menuDesktop,setMenuDesktop] = useState(true);
     const [icon_menu,setIcon_menu] = useState(true);
     const [icon_close,setIcon_close] = useState(false);
+
 
 
     const handleClick = () => {
@@ -17,18 +18,11 @@ const Header = () => {
 
     }
 
+        
 
         useEffect(() => {
-            const screenSize = window.screen.width; //esto es para saber el tamanio de la pantalla
 
-            //Si el tamanio de la pantalla es mayor a 768 se activa el menu
-            if(screenSize >= 768){
-                setMenuDesktop(true);
-            }
-            else{
-                setMenuDesktop(false);
-            }
-
+            //Esto es para medir en todo momento si se hace scroll
             window.onscroll = () => {
                 const scroll = document.documentElement.scrollTop || document.body.scrollTop;
                 if(scroll > 1){
@@ -38,6 +32,21 @@ const Header = () => {
      
                 }
             }
+
+            //Esto es para evaluar en todo momento si se redimensiona la pantalla
+            window.onresize = () => {
+                const screenSize = window.screen.width; //esto es para saber el tamanio de la pantalla
+
+                //Si el tamanio de la pantalla es mayor a 768 se activa el menu
+                if(screenSize >= 768){
+                    setMenuDesktop(true);
+                }
+                else{
+                    setMenuDesktop(false);
+
+                    }
+                }
+
         },[])
            
            

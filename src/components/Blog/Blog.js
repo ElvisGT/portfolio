@@ -48,8 +48,8 @@ const Blog = () => {
                 
             }
             
-        window.location.reload(); //esto es para recargar la pagina
         localStorage.clear(); // esto es para limpiar el local storage
+        window.location.reload(); //esto es para recargar la pagina
     }
     
     

@@ -75,9 +75,7 @@
 }
 
 .header-menu-desktop {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: none;
 }
 
 .header-vinculo {
@@ -632,6 +630,11 @@
 
     .header {
         display: inline-block;
+    }
+    .header-menu-desktop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .header-icon-menu {
