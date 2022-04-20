@@ -30,7 +30,7 @@ const data = [
         id:5,
         img:'https://i.ibb.co/Ky7sZdv/platzi-video.jpg',
         alt:'imagen de proyecto Platzi_Video',
-        description:'Proyecto donde utilicé mis conocimientos en React y además hice uso de una API Rest publica con datos falsos de práctica',
+        description:'Proyecto donde utilicé mis conocimientos en React y además hice uso de una API Rest pública con datos falsos de práctica',
         github:'https://github.com/ElvisGT/Platzi_Video_with_React',
         hosting:'https://elvisgt.github.io/Platzi_Video_with_React/',
         
