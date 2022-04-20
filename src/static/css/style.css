@@ -117,8 +117,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    
 }
 
 .footer-vinculo {
@@ -731,6 +729,16 @@
     .item-card-vinculo:hover  {
         background-color: var(--yellow);
         transition: .6s;
+    }
+
+    .footer-contacts {
+        min-height: 20rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-vinculo:hover {
+        border:.1rem solid var(--yellow);
     }
   
 }
