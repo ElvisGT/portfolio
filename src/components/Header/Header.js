@@ -25,9 +25,9 @@ const Header = () => {
             //Esto es para medir en todo momento si se hace scroll
             window.onscroll = () => {
                 const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-                if(scroll > 5){
+                if(scroll > 200){
                     setMenu(false);
-                }else if(scroll < 15) {
+                }else if(scroll < 500) {
                      setIcon_menu(true);
      
                 }
