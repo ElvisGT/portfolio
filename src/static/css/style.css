@@ -3,6 +3,7 @@
     --white:white;
     --background-black:#252422;
     --background-black-light:#403d39;
+    --yellow:yellow;
 
 }
 
@@ -440,7 +441,7 @@
 }
 
 .item-card-vinculo:active {
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 
 
@@ -550,7 +551,7 @@
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
-    min-height:30rem;
+    min-height:45rem;
     background-color: var(--background-black);
 }
 
@@ -614,7 +615,7 @@
 }
 
 .project-item-vinculo:active {
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 
 
@@ -637,6 +638,14 @@
         align-items: center;
     }
 
+    .header-menu-desktop:hover .header-vinculo {
+        opacity: 0.3;
+    }
+
+    .header-menu-desktop:hover .header-vinculo:hover {
+        opacity: 1;
+    }
+
     .header-icon-menu {
         display: none;
     }
@@ -649,10 +658,10 @@
     }
 
     .header-vinculo:hover {
-        color:yellow;
         flex: .2;
+        color:var(--yellow);
         transition:flex .8s;
-        border: .1rem solid yellow;
+        border: .1rem solid var(--yellow);
     }
 
     .contact-vinculo {
@@ -685,5 +694,27 @@
     .services-card-item {
         animation-duration: .8s;
     }
-   
+
+    .portfolio-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .portfolio-project-item {
+        width: 30rem;
+    }
+
+    .project-item-img {
+        width: 30rem;
+    }
+    
+    .project-item-description {
+        font-size: 1.8rem;
+    }
+
+    .project-item-vinculo:hover {
+        background-color: var(--yellow);
+        transform: scale(1.2);
+        transition: .6s;
+    }
 }
