@@ -644,14 +644,15 @@
     .header-vinculo{
         flex: .1;
         transition: .8s;
+        text-align: center;
+
     }
 
     .header-vinculo:hover {
         color:yellow;
         flex: .2;
         transition:flex .8s;
-        text-align: center;
-        border: .1rem solid var(--text);
+        border: .1rem solid yellow;
     }
 
     .contact-vinculo {
@@ -663,6 +664,26 @@
         position: absolute;
         animation: name 5s linear  infinite  both;
 
+    }
+
+    .services {
+        min-height: 28rem;
+    }
+
+    .services-card-item {
+        max-width: 15rem;
+        min-height: 15rem;
+        max-height: 20rem;
+        
+    }
+
+    .services-card {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .services-card-item {
+        animation-duration: .8s;
     }
    
 }
