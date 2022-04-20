@@ -622,8 +622,13 @@
 @media screen and (min-width:768px){
     .home {
         flex-direction: row;
+        justify-content: space-evenly;
         padding-left: 1rem;
         min-height: 30rem;
+    }
+
+    .home-container {
+        width: 40rem;
     }
     .home-description{
         font-size: 1.6rem;
