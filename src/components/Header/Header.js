@@ -1,11 +1,14 @@
 import React,{ useState,useEffect } from 'react';
 import '../../static/css/style.css';
 import {Menu} from './Menu';
+import {MenuDesktop} from './MenuDesktop';
 
 const Header = () => {
     const [menu,setMenu] = useState(false);
+    const [menuDesktop,setMenuDesktop] = useState(true);
     const [icon_menu,setIcon_menu] = useState(true);
     const [icon_close,setIcon_close] = useState(false);
+
 
 
     const handleClick = () => {
@@ -15,8 +18,11 @@ const Header = () => {
 
     }
 
+        
 
         useEffect(() => {
+
+            //Esto es para medir en todo momento si se hace scroll
             window.onscroll = () => {
                 const scroll = document.documentElement.scrollTop || document.body.scrollTop;
                 if(scroll > 1){
@@ -26,13 +32,28 @@ const Header = () => {
      
                 }
             }
+
+            //Esto es para evaluar en todo momento si se redimensiona la pantalla
+            window.onresize = () => {
+                const screenSize = window.screen.width; //esto es para saber el tamanio de la pantalla
+
+                //Si el tamanio de la pantalla es mayor a 768 se activa el menu
+                if(screenSize >= 768){
+                    setMenuDesktop(true);
+                }
+                else{
+                    setMenuDesktop(false);
+
+                    }
+                }
+
         },[])
            
            
    
     return(
         <div className="header" id="home">
-            <h1 className="header-name">ElvisGT</h1>
+            <h1 className="header-name" id="header-name-animation">ElvisGT</h1>
 
             {/*Mostrar icono de menu*/}
             {icon_menu &&
@@ -42,6 +63,11 @@ const Header = () => {
             {/*Mostrar el menu*/}
             {menu && 
                 <Menu handleClick={handleClick} />        
+            }
+            
+            {/*Mostrar el menu Desktop*/}
+            {menuDesktop &&
+                <MenuDesktop />
             }
                 
         </div>

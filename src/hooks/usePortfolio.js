@@ -10,7 +10,7 @@ useEffect(() => {
     window.addEventListener("scroll", function(){
         const portfolio = document.getElementById("portfolio");
 
-        if(portfolio.getBoundingClientRect().top < 300){
+        if(portfolio.getBoundingClientRect().top < 300 ){
             setPortfolioItem(true);
         }
         else{
@@ -19,7 +19,6 @@ useEffect(() => {
 
 
     })
-
 },[])
 
     return portfolioItem
