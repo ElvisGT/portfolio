@@ -7,7 +7,7 @@ const Services = () => {
     
     return(
         <div className="services" id="services">
-                <PageTitle title="SERVICES" description="My Skills"/>
+                <PageTitle title="SERVICIOS" description="Desarrollo sitios web adaptados a todos los dispositivos utilizando buenas prácticas y haciendo uso de tecnologías como: "/>
                 
 
                 <div className="services-card">

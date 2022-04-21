@@ -9,7 +9,7 @@ const Portfolio = () => {
 
     return(
         <div className="portfolio" id="portfolio">
-            <PageTitle title="PORTFOLIO" description="My projects"/>
+            <PageTitle title="PORTAFOLIO" description="Mis proyectos"/>
 
             <section className="portfolio-container">
             {data.map(item => (

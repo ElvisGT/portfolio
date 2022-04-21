@@ -12,7 +12,7 @@ const Projects = ({img,alt,description,github,hosting}) => {
                     <p className="project-item-description">{description}</p>
                     <div className="project-item-vinculo-container"> 
                         <a className="project-item-vinculo" target={"_blank"} href={github}>Github</a>
-                        <a className="project-item-vinculo" target={"_blank"} href={hosting}>Test</a>
+                        <a className="project-item-vinculo" target={"_blank"} href={hosting}>Probar</a>
                     </div>
         
                 </article>
