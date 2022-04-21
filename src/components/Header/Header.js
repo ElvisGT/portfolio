@@ -40,9 +40,11 @@ const Header = () => {
                 //Si el tamanio de la pantalla es mayor a 768 se activa el menu
                 if(screenSize >= 768){
                     setMenuDesktop(true);
+                    setMenu(false);
                 }
                 else{
                     setMenuDesktop(false);
+                    setIcon_menu(true);
 
                     }
                 }
