@@ -24,10 +24,11 @@ const Footer = () => {
                             </div>
                         }
                     
-                            <h3 className="footer-derechos" >Todos los derechos reservados 2022.</h3>
                             
                             <p className="footer-icon">Iconos de <a className="footer-icon-vinculo" target={"_blank"} href="https://icons8.com" title="Link a Icons8" rel="preconnect">Icons8</a></p>
+                            <p className="footer-icon">Imágenes de <a className="footer-icon-vinculo" target={"_blank"} href="https://pexels.com" title="Link a Pexels" rel="preconnect">Pexels</a></p>
                     
+                            <h3 className="footer-derechos" >Todos los derechos reservados 2022.</h3>
 
             
         </div>
