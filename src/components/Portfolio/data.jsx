@@ -35,6 +35,15 @@ const data = [
         hosting:'https://elvisgt.github.io/Platzi_Video_with_React/',
         
     },
+    {
+        id:6,
+        img:'https://i.ibb.co/2qj7k2q/Platzi-Conf-Merche.jpg',
+        alt:'imagen de proyecto Platzi_Conf_Merche',
+        description:'Hice uso fundamentalmente de hooks, asi como de react-router y buenas practicas en el desarrollo de la app',
+        github:'https://github.com/ElvisGT/Platzi_Conf_Merch',
+        hosting:'https://elvisgt.github.io/Platzi_Conf_Merch/',
+        
+    },
 ];
 
 
