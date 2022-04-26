@@ -561,7 +561,7 @@
 .project-item-img {
     width: 25rem;
     height: 25rem;
-    object-fit: cover;
+    object-fit: contain;
     scroll-snap-align: center;
 }
 
