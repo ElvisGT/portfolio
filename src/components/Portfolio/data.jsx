@@ -1,5 +1,14 @@
 const data = [
     {
+        id:1,
+        img:'https://i.ibb.co/7Rm6hdb/todo.jpg',
+        alt:'imagen de proyecto TODO_tareas_pendientes',
+        description:'Aplicacion hecha en React js haciendo uso de custom hooks como useState,useReducer y useRef',
+        github:'https://github.com/ElvisGT/TODO_tareas_pendientes',
+        hosting:'https://elvisgt.github.io/TODO_tareas_pendientes/',
+
+    },
+    {
         id:2,
         img:'https://i.ibb.co/Z1YZvy0/2-1.png',
         alt:'imagen de proyecto Blog_Practica',
