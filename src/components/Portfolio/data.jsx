@@ -53,6 +53,15 @@ const data = [
         hosting:'https://elvisgt.github.io/Platzi_Conf_Merch/',
         
     },
+    {
+        id:7,
+        img:'https://i.ibb.co/V9qmKkT/cientifico.jpg',
+        alt:'imagen de proyecto Cientifico_JS_Vanilla',
+        description:'Utilice solamente JS Vanilla,Webpack y Npm',
+        github:'https://github.com/ElvisGT/Cientifico_JS_Vanilla',
+        hosting:'https://elvisgt.github.io/Cientifico_JS_Vanilla/',
+        
+    },
 ];
 
 
