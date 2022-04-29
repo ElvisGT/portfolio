@@ -372,13 +372,13 @@
 }
 
 .item-card-title {
-    margin: .5rem 0;
+    margin: .5rem .5rem;
     font-size: 2rem;
     color: var(--text);
 }
 
 .item-card-description {
-    margin-bottom: 1rem;
+    margin: 0 .5rem 1rem;
     font-weight: 500;
     line-height: 2.3rem;
     color: var(--white);
