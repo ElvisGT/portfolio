@@ -10,13 +10,14 @@ const data = [
     },
     {
         id:2,
-        img:'https://i.ibb.co/Z1YZvy0/2-1.png',
-        alt:'imagen de proyecto Blog_Practica',
-        description:'Blog de práctica realizado con HTML5 y CSS3, con FlexBox, Grid y es 100% responsive.',
-        github:'https://github.com/ElvisGT/Blog_Practica_HTML_CSS',
-        hosting:'https://gorgeous-lolly-580aaa.netlify.app',
+        img:'https://i.ibb.co/pJym3SR/Captura.jpg',
+        alt:'imagen de proyecto Application_Redux',
+        description:'Aplicacion hecha en React js y utilizando Redux para el flujo de la información.',
+        github:'https://github.com/ElvisGT/Application_Redux',
+        hosting:'https://delicate-daifuku-e520aa.netlify.app/',
 
     },
+    
     {
         id:3,
         img:'https://i.ibb.co/M8zk18H/44.png',
@@ -61,6 +62,15 @@ const data = [
         github:'https://github.com/ElvisGT/Cientifico_JS_Vanilla',
         hosting:'https://elvisgt.github.io/Cientifico_JS_Vanilla/',
         
+    },
+    {
+        id:8,
+        img:'https://i.ibb.co/Z1YZvy0/2-1.png',
+        alt:'imagen de proyecto Blog_Practica',
+        description:'Blog de práctica realizado con HTML5 y CSS3, con FlexBox, Grid y es 100% responsive.',
+        github:'https://github.com/ElvisGT/Blog_Practica_HTML_CSS',
+        hosting:'https://gorgeous-lolly-580aaa.netlify.app',
+
     },
 ];
 
