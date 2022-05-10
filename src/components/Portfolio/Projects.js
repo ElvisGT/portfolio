@@ -1,8 +1,8 @@
 import React from 'react';
-import {usePortfolio} from '../../hooks/usePortfolio';
+import {useAnimation} from '../../hooks/useAnimation';
 
 const Projects = ({img,alt,description,github,hosting}) => {
-    const portfolioItem = usePortfolio();
+    const {portfolioItem} = useAnimation();
 
     return(
         <React.Fragment>

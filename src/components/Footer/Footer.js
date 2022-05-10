@@ -1,11 +1,11 @@
 import React from 'react';
-import { useArrow } from '../../hooks/useArrow';
+import { useAnimation } from '../../hooks/useAnimation';
 import '../../static/css/style.css';
 import { PageTitle } from '../PageTitle/PageTitle';
 
 
 const Footer = () => {
-    const arrow = useArrow();
+    const {upArrow} = useAnimation();
        
     return(
         <div className="footer">    
@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>  
 
                         {/* Se muestra solo cuando la condicion del viewport se cumple y el estado es verdadero*/}
-                        {arrow && 
+                        {upArrow && 
                             <div className="footer-upArrow" >
                                 <a href="#home" title="Ir al inicio"><img className="footer-upArrow-img" src="https://i.ibb.co/vV3Tb3B/icons8-arriba-en-cuadrado-64.png" alt="flecha hacia arriba"/></a>
                             </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import {useCard} from '../../hooks/useCard';
+import {useAnimation} from '../../hooks/useAnimation';
 
 const ItemServices = ({serviceName,serviceIMG,serviceALT,cardID}) => {
-        const item = useCard();   
+        const {card} = useAnimation();   
     
     return (
             <React.Fragment>
-            {item && 
+            {card && 
                     <div className="services-card-item" id={cardID}>
                         <img className="services-card-img" src={serviceIMG} alt={serviceALT}/>
                         <p className="services-card-serviceName">{serviceName}</p>
