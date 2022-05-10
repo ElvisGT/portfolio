@@ -302,6 +302,7 @@
         opacity: 1;
         transform: translateY(0);
 
+
     }
 }
 
@@ -641,7 +642,7 @@
     .header-vinculo:hover {
         flex: .2;
         color:var(--yellow);
-        transition:flex .8s;
+        transition:flex .5s;
         border: .1rem solid var(--yellow);
     }
 
@@ -657,7 +658,7 @@
     }
 
     .services {
-        min-height: 28rem;
+        min-height: 30rem;
     }
 
     .services-card-item {
@@ -673,7 +674,7 @@
     }
 
     .services-card-item {
-        animation-duration: .8s;
+        animation-duration: .5s;
     }
 
     .portfolio {
