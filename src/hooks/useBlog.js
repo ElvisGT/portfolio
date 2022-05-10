@@ -8,7 +8,7 @@ const useBlog = (API) => {
         fetch(API)
         .then(response => response.json())
         .then(data => setNews(data.results));
-    },[]);
+    },[API]);
 
 
     return news;

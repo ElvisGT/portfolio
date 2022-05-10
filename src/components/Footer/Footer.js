@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="footer">    
                 <PageTitle title="CONTACTO"/>
                 <div className="footer-contacts" id="contact">
-                            <a className="footer-vinculo" href="https://www.linkedin.com/in/elvis-gil-torres-ab64a9225/" target={"_blank"} rel="preconnect"><img className="contact-img" src="https://i.ibb.co/QXPPLpp/icons8-linkedin-64.png" alt="icono de Linkedin"/>LinkedIn</a>
-                            <a className="footer-vinculo" href="https://www.facebook.com/elvis.giltorres/" target={"_blank"} rel="preconnect"><img className="contact-img" src="https://i.ibb.co/N37fLYQ/icons8-facebook-50.png" alt="icono de Facebook"/>Facebook</a>
-                            <a className="footer-vinculo" href="https://github.com/ElvisGT" target={"_blank"} rel="preconnect"><img className="contact-img" src="https://i.ibb.co/Fbfdvz5/icons8-github-64.png" alt="icono de Github"/>Github</a>
-                            <a className="footer-vinculo" href="mailto:elvisgiltorres@gmail.com" target={"_blank"} rel="preconnect"><img className="contact-img" src="https://i.ibb.co/tqWG9BL/icons8-google-plus-64.png" alt="icono de Mail"/>Mail</a>
+                            <a className="footer-vinculo" href="https://www.linkedin.com/in/elvis-gil-torres-ab64a9225/" target={"_blank"} rel="noreferrer"><img className="contact-img" src="https://i.ibb.co/QXPPLpp/icons8-linkedin-64.png" alt="icono de Linkedin"/>LinkedIn</a>
+                            <a className="footer-vinculo" href="https://www.facebook.com/elvis.giltorres/" target={"_blank"} rel="noreferrer"><img className="contact-img" src="https://i.ibb.co/N37fLYQ/icons8-facebook-50.png" alt="icono de Facebook"/>Facebook</a>
+                            <a className="footer-vinculo" href="https://github.com/ElvisGT" target={"_blank"} rel="noreferrer"><img className="contact-img" src="https://i.ibb.co/Fbfdvz5/icons8-github-64.png" alt="icono de Github"/>Github</a>
+                            <a className="footer-vinculo" href="mailto:elvisgiltorres@gmail.com" target={"_blank"} rel="noreferrer"><img className="contact-img" src="https://i.ibb.co/tqWG9BL/icons8-google-plus-64.png" alt="icono de Mail"/>Mail</a>
                 </div>  
 
                         {/* Se muestra solo cuando la condicion del viewport se cumple y el estado es verdadero*/}
@@ -25,8 +25,8 @@ const Footer = () => {
                         }
                     
                             
-                            <p className="footer-icon">Iconos de <a className="footer-icon-vinculo" target={"_blank"} href="https://icons8.com" title="Link a Icons8" rel="preconnect">Icons8</a></p>
-                            <p className="footer-icon">Imágenes de <a className="footer-icon-vinculo" target={"_blank"} href="https://pexels.com" title="Link a Pexels" rel="preconnect">Pexels</a></p>
+                            <p className="footer-icon">Iconos de <a className="footer-icon-vinculo" target={"_blank"} rel="noreferrer" href="https://icons8.com" title="Link a Icons8">Icons8</a></p>
+                            <p className="footer-icon">Imágenes de <a className="footer-icon-vinculo" target={"_blank"} rel="noreferrer" href="https://pexels.com" title="Link a Pexels">Pexels</a></p>
                     
                             <h3 className="footer-derechos" >Todos los derechos reservados 2022.</h3>
 

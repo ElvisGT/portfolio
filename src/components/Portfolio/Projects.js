@@ -11,8 +11,8 @@ const Projects = ({img,alt,description,github,hosting}) => {
                     <img className="project-item-img" src={img} alt={alt}/>
                     <p className="project-item-description">{description}</p>
                     <div className="project-item-vinculo-container"> 
-                        <a className="project-item-vinculo" target={"_blank"} href={github} title="Ver código en Github">Github</a>
-                        <a className="project-item-vinculo" target={"_blank"} href={hosting} title="Probar sitio en producción">Probar</a>
+                        <a className="project-item-vinculo" target={"_blank"} rel="noreferrer" href={github} title="Ver código en Github">Github</a>
+                        <a className="project-item-vinculo" target={"_blank"} rel="noreferrer" href={hosting} title="Probar sitio en producción">Probar</a>
                     </div>
         
                 </article>
